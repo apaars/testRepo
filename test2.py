@@ -5,6 +5,7 @@ Created on Mon Aug 04 15:27:20 2014
 @author: tonu
 """
 
+# Checking
 female  = set()
 f = open('dist.female.first')
 for line in f:
