@@ -18,6 +18,7 @@ print paras
 
 #tuples -- immutable
 lis = (19, 73, -42, 17, 18)
+lis = list(lis)
 for n in range(len(lis) - 1):
     print "lis[%s] = %s" % (n,lis[n])
 
