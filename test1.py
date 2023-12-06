@@ -17,8 +17,8 @@ del paras['tol']
 print paras
 
 #tuples -- immutable
-lis = (19, 73, -42, 17)
-for n in range(len(lis)):
+lis = (19, 73, -42, 17, 18)
+for n in range(len(lis) - 1):
     print "lis[%s] = %s" % (n,lis[n])
 
 
