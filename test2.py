@@ -17,6 +17,12 @@ for line in f:
     male.add(line.split()[0])
 f.close()
 
+print('my name is???')
+
+count = (len(female), len(male))
+print "Females: %s, Males: %s" % count
+print "names in both sets are %s" % len(male & female)
+
 count = (len(female), len(male))
 print "Females: %s, Males: %s" % count
 print "names in both sets are %s" % len(male & female)

@@ -2,7 +2,7 @@
 """
 Created on Mon Aug 04 14:58:05 2014
 
-@author: tonu
+@author: tonu sadhwani
 """
 
 #dictionaries -- mutable except keys cant be mutable
@@ -16,12 +16,22 @@ print paras
 del paras['tol']
 print paras
 
+#tuples -- immutable
+lis = (19, 73, -42, 17)
+for n in range(len(lis)):
+    print "lis[%s] = %s" % (n,lis[n])
+
 
 paras = {}
 paras['niter'] = 500
 paras['tol'] = 1.e-06
 for key in paras:
     print "a[%s] = %s" % (key,paras[key])
+
+#sets -- mutable, no order for elements
+myset = set()
+myset.add("math")
+myset.add("chem")
 
 
 #tuples -- immutable
@@ -32,8 +42,11 @@ for n in range(len(lis)):
 
 #sets -- mutable, no order for elements
 myset = set()
-myset.add("math")
 myset.add("chem")
+
+print (myset & yourset) | yourset
+
+myset.add("math")
 
 yourset = set()
 yourset.add("physics")
